@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Link from 'next/link'
-import LocalNav from './LocalNav'
+
 const GlobalNav = () => {
 
   return (
@@ -52,7 +52,7 @@ const GlobalNavLinks = styled.div`
   margin: 0 auto;
   justify-content: space-between;
   
-  & p{
+  & Link{
     color: rgb(29, 29, 31);
     text-decoration: none;
   }

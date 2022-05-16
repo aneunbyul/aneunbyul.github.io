@@ -63,8 +63,6 @@ const LocalNav = () => {
 };
 
 const LocalNavWrapper = styled.div`
-  //position: absolute;
-  //top: 45px;
   left: 0;
   z-index: 11;
   width: 100%;
@@ -80,15 +78,6 @@ const LocalNavWrapper = styled.div`
   -o-backdrop-filter: ${props => props.isSticky ? 'saturate(180%) blur(15px)' : 'none'};
   backdrop-filter: ${props => props.isSticky ? 'saturate(180%) blur(15px)' : 'none'};
   
-  //  position: fixed;
-  //  top: 0;
-  //  background: rgba(255, 255, 255, 0.1);
-  //  /* for iPhone */
-  //  -webkit-backdrop-filter: saturate(180%) blur(15px);
-  //  -moz-backdrop-filter: saturate(180%) blur(15px);
-  //  -o-backdrop-filter: saturate(180%) blur(15px);
-  //  backdrop-filter: saturate(180%) blur(15px);
-  //}
 `;
 const LocalNavLinks = styled.div`
   display: flex;
@@ -99,11 +88,12 @@ const LocalNavLinks = styled.div`
   
   & p{
     font-size: 0.8rem;
+    margin-left: 2rem;
   }
 `;
 const ProductName = styled.div`
   margin-right: auto;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: bold;
 `;
 
