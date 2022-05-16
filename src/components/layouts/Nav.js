@@ -1,53 +1,18 @@
 import styled from "styled-components";
+import Link from 'next/link'
+import LocalNav from './LocalNav'
+import GlobalNav from './GlobalNav'
 const Nav = () => {
 
   return (
       <NavWrapper>
-        <GlobalNavLinks>
-          <p>
-            DEFENSE & INTELLIGENCE
-          </p>
-          <p>
-            DEFENSE & INTELLIGENCE
-          </p>
-          <p>
-            DEFENSE & INTELLIGENCE
-          </p>
-          <p>
-            DEFENSE & INTELLIGENCE
-          </p>
-
-        </GlobalNavLinks>
-        {/*  title="SOLUTIONS"*/}
-        {/*  baseUrl="/solutions"*/}
-        {/*  list={solutionList}*/}
-        {/*  hasQuery*/}
-        {/*  closeShowMobile={() => setIsShowMobile(false)}*/}
-        {/*  setCurrentMobileTab={setCurrentMobileTab}*/}
-        {/*  currentMobileTab={currentMobileTab}*/}
-        {/*/>*/}
-        {/*<HeaderNavLink*/}
-        {/*  title="PRODUCTS"*/}
-        {/*  baseUrl="/products"*/}
-        {/*  list={productList}*/}
-        {/*  hasQuery*/}
-        {/*  closeShowMobile={() => setIsShowMobile(false)}*/}
-        {/*  setCurrentMobileTab={setCurrentMobileTab}*/}
-        {/*  currentMobileTab={currentMobileTab}*/}
-        {/*/>*/}
+        <GlobalNav/>
+        <LocalNav/>
       </NavWrapper>
   );
 };
 
 const NavWrapper = styled.div`
-  /*스크롤값 차지 안하도록 absolute지정*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 44px;
-  padding: 0 1rem;
   overflow-x: hidden;
   color: #141112c7;
   letter-spacing: -0.05em;
@@ -66,5 +31,4 @@ const GlobalNavLinks = styled.div`
     text-decoration: none;
   }
 `;
-
 export default Nav;
