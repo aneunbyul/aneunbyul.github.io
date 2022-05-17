@@ -42,7 +42,7 @@ const GlobalNavWrapper = styled.div`
   overflow-x: hidden;
   color: #141112c7;
   letter-spacing: -0.05em;
-  background: white;
+  //background: white;
 `;
 const GlobalNavLinks = styled.div`
   display: flex;
