@@ -15,12 +15,11 @@ const ScrollToTop = () => {
 };
 
 const Layout = ({ children }) => {
-  const [visible, setVisible] = useState(true);
 
   return (
     <div>
         <ScrollToTop />
-        <Header visible={visible} setVisible={setVisible} />
+        <Header />
         <Nav/>
         <main>{children}</main>
         <Footer />

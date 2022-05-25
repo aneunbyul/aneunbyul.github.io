@@ -396,14 +396,17 @@ const MainTitle = styled.div`
 
 
 const Box = styled.div`
-  position: relative;
+  position: absolute;
+  top: 0;
   width: 100vw;
   height: 100vh;
 
   & canvas {
-    display: none;
+    //display: none;
+    position: fixed;
     width: 100vw;
     height: 100vh;
+
   }
 `;
 
