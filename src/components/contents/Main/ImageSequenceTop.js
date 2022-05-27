@@ -221,7 +221,7 @@ const ImageSequenceTop = () => {
     let numberOfLoadedImages = 0;
     for (let i = 0; i < imagesNumber+1; i++) {
       let imgElem = new Image();
-      imgElem.src = `./Image-Sequence-sea/image ${i
+      imgElem.src = `./Image-Sequence-sea/Image ${i
           .toString()
           .padStart(3, "0")}.jpeg`;
       scene0Images.push(imgElem);
