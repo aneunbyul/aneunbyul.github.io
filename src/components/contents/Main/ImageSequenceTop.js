@@ -225,9 +225,6 @@ const ImageSequenceTop = () => {
       imgElem.src = `./Image-Sequence-sea/image ${i
           .toString()
           .padStart(3, "0")}.jpeg`;
-      // imgElem.src = `./Image-Sequence/SatteliteMoveLoop_Horizontal_v2${i
-      //     .toString()
-      //     .padStart(3, "0")}.png`;
       scene0Images.push(imgElem);
       const loadImag = () => {
         scene0Images.push(imgElem);
@@ -237,7 +234,6 @@ const ImageSequenceTop = () => {
         if (numberOfLoadedImages === imagesNumber) {
           // 해당 씬의 이미지가 모두 로드되었으면
           setFinishedLoadingImages(true);
-          console.log(`scene 0 이미지 로드 완료`);
           // console.log(`로드된 이미지 총개수: ${totalImages + 1}`);
           if (!canvasRef || !canvasRef.current) return;
           const context = canvasRef.current.getContext("2d");
