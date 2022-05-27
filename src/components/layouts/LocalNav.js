@@ -29,33 +29,23 @@ const LocalNav = () => {
         <LocalNavLinks>
           <Link href={'/#'}>
           <ProductName>
-            TelePIX
+            Home
           </ProductName>
           </Link>
           <Link href={'/#'}>
-          <p>
-            Solutions
-          </p>
+            <NavName>
+              About
+            </NavName>
           </Link>
           <Link href={'/#'}>
-          <p>
-            Products
-          </p>
+          <NavName>
+            Work
+          </NavName>
           </Link>
           <Link href={'/#'}>
-          <p>
-            Company
-          </p>
-          </Link>
-          <Link href={'/#'}>
-          <p>
-            Careers
-          </p>
-          </Link>
-          <Link href={'/#'}>
-          <p>
-            Media
-          </p>
+          <NavName>
+            Contact
+          </NavName>
           </Link>
         </LocalNavLinks>
       </LocalNavWrapper>
@@ -87,7 +77,7 @@ const LocalNavLinks = styled.div`
   margin: 0 auto;
   
   & p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 2rem;
   }
 `;
@@ -95,6 +85,11 @@ const ProductName = styled.div`
   margin-right: auto;
   font-size: 2.4rem;
   font-weight: bold;
+`;
+const NavName = styled.div`
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  //font-weight: bold;
 `;
 
 export default LocalNav;

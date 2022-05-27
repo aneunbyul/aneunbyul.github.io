@@ -8,22 +8,22 @@ const GlobalNav = () => {
         <GlobalNavLinks>
           <Link href={'/#'}>
           <p>
-            DEFENSE & INTELLIGENCE
+            Work 1
           </p>
           </Link>
           <Link href={'/#'}>
           <p>
-            COAST GUARD
+            Work 2
           </p>
           </Link>
           <Link href={'/#'}>
           <p>
-            OPTICAL DESIGN & ANALYSIS
+            Work 3
           </p>
           </Link>
           <Link href={'/#'}>
           <p>
-            ENVIRONMENTAL MONITORING
+            Work 4
           </p>
           </Link>
         </GlobalNavLinks>
