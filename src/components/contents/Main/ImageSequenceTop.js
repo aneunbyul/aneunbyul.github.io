@@ -2,6 +2,7 @@ import styled, {css, keyframes} from "styled-components";
 import {useState, useCallback, useEffect, useRef} from "react";
 
 const ImageSequenceTop = () => {
+  const imagesNumber=379;
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const obj1Ref = useRef(null);
@@ -42,7 +43,7 @@ const ImageSequenceTop = () => {
     if (!enterNewScene) {
       if (currentScene === 0) {
         const currentYOffset = delayedYOffset - prevScrollHeight;
-        sequence = Math.round(calcValues([0, 299], currentYOffset));
+        sequence = Math.round(calcValues([0, imagesNumber], currentYOffset));
         // console.log(delayedYOffset, sequence);
 
         console.log(window.pageYOffset, scrollHeight)
@@ -219,21 +220,24 @@ const ImageSequenceTop = () => {
     if (finishedLoadingImages) return;
     let scene0Images = [];
     let numberOfLoadedImages = 0;
-    for (let i = 0; i < 299; i++) {
+    for (let i = 0; i < imagesNumber+1; i++) {
       let imgElem = new Image();
-      imgElem.src = `./Image-Sequence/SatteliteMoveLoop_Horizontal_v2${i
+      imgElem.src = `./Image-Sequence-sea/image ${i
           .toString()
-          .padStart(3, "0")}.png`;
+          .padStart(3, "0")}.jpeg`;
+      // imgElem.src = `./Image-Sequence/SatteliteMoveLoop_Horizontal_v2${i
+      //     .toString()
+      //     .padStart(3, "0")}.png`;
       scene0Images.push(imgElem);
       const loadImag = () => {
         scene0Images.push(imgElem);
         numberOfLoadedImages++;
         totalImages++;
 
-        if (numberOfLoadedImages === 298) {
+        if (numberOfLoadedImages === imagesNumber) {
           // 해당 씬의 이미지가 모두 로드되었으면
           setFinishedLoadingImages(true);
-          // console.log(`scene 0 이미지 로드 완료`);
+          console.log(`scene 0 이미지 로드 완료`);
           // console.log(`로드된 이미지 총개수: ${totalImages + 1}`);
           if (!canvasRef || !canvasRef.current) return;
           const context = canvasRef.current.getContext("2d");
@@ -297,7 +301,7 @@ const ImageSequenceTop = () => {
          />
           <MainTitle>
             <ProgressLineText>
-              <p>_____</p> <p>_</p> <p>_</p>
+              {/*<p>_____</p> <p>_</p> <p>_</p>*/}
             </ProgressLineText>
             <br/>
           </MainTitle>
@@ -313,7 +317,7 @@ const ImageSequenceTop = () => {
           </MainTitle>
           <MainTitle isScrolled ref={obj2Ref}>
             <ProgressLineText>
-              <p>_____</p> <p>_</p> <p>_</p>
+              {/*<p>_____</p> <p>_</p> <p>_</p>*/}
             </ProgressLineText>
             <br/>
             <div>
@@ -323,7 +327,7 @@ const ImageSequenceTop = () => {
           </MainTitle>
           <MainTitle isScrolled ref={obj3Ref}>
             <ProgressLineText>
-              <p>_____</p> <p>_</p> <p>_</p>
+              {/*<p>_____</p> <p>_</p> <p>_</p>*/}
             </ProgressLineText>
             <br/>
             <div>
