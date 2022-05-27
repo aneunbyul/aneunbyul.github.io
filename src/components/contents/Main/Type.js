@@ -14,7 +14,7 @@ const Type = () => {
         </TypeIt>
         <TypeIt
             options={{
-              strings: ["This will be typed!"],
+              strings: ["This will be    typed!"],
               speed: 10,
               waitUntilVisible: true,
             }}
