@@ -10,7 +10,7 @@ const Type = () => {
   return (
       <TypeContainer>
         <TypeIt>
-          Weak text. <SuperStrong>Super strong text.</SuperStrong>
+          Weak text . <SuperStrong>Super strong text.</SuperStrong>
         </TypeIt>
         <TypeIt
             options={{
