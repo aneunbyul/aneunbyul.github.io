@@ -179,7 +179,6 @@ const ImageSequenceTop = () => {
               currentYOffset
           )}%, 0)`;
         }
-
         break;
     }
   }
