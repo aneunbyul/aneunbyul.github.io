@@ -10,11 +10,11 @@ const Type = () => {
   return (
       <TypeContainer>
         <TypeIt>
-          Weak text. <SuperStrong>Super strong text.</SuperStrong>
+          Weak text . <SuperStrong>Super strong text.</SuperStrong>
         </TypeIt>
         <TypeIt
             options={{
-              strings: ["This will be typed!"],
+              strings: ["This wi ll be    type d!"],
               speed: 10,
               waitUntilVisible: true,
             }}
