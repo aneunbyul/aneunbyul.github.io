@@ -10,7 +10,7 @@ const Footer = () => {
     <StyledFooter>
       {/*<LimitWidthLayout padding="36px 0">*/}
       <InnerWrapper>
-        <p>telePIX © 2021</p>
+        <p>aeb © 2024</p>
         <TagBox>
 
         </TagBox>
